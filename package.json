@@ -8,8 +8,8 @@
     "url": "git+https://github.com/rowanwins/leaflet-easyPrint.git"
   },
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w", 
+    "build": "rollup -c && cp ./src/styles.css dist",
+    "dev": "rollup -c -w",
     "prepublish": "npm run build"
   },
   "keywords": [
